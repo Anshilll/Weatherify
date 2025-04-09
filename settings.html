@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="weather-background"></div>
+    
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-cloud-sun"></i>
+            <span>Weather Dashboard</span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="favorites.html">Favorites</a>
+            <a href="settings.html" class="active">Settings</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="settings-section">
+            <h2>Settings</h2>
+            
+            <div class="settings-card">
+                <h3>Theme Settings</h3>
+                <div class="theme-options">
+                    <button class="theme-btn" data-theme="default">Default</button>
+                    <button class="theme-btn" data-theme="dark">Dark Mode</button>
+                    <button class="theme-btn" data-theme="minimal">Minimal</button>
+                    <button class="theme-btn" data-theme="vibrant">Vibrant</button>
+                </div>
+            </div>
+
+            <div class="settings-card">
+                <h3>Temperature Unit</h3>
+                <div class="unit-options">
+                    <button class="unit-btn active" data-unit="metric">°C</button>
+                    <button class="unit-btn" data-unit="imperial">°F</button>
+                </div>
+            </div>
+
+            <div class="settings-card">
+                <h3>Feedback</h3>
+                <form id="feedback-form" class="feedback-form">
+                    <div class="form-group">
+                        <label for="feedback-type">Feedback Type</label>
+                        <select id="feedback-type" required>
+                            <option value="bug">Bug Report</option>
+                            <option value="feature">Feature Request</option>
+                            <option value="improvement">Improvement</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="feedback-message">Message</label>
+                        <textarea id="feedback-message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit Feedback</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Created with <i class="fas fa-heart"></i> using OpenWeatherMap API</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <script src="settings.js"></script>
+</body>
+</html> 

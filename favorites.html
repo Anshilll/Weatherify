@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Cities - Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="weather-background"></div>
+    
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-cloud-sun"></i>
+            <span>Weather Dashboard</span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="favorites.html" class="active">Favorites</a>
+            <a href="settings.html">Settings</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="favorites-section">
+            <h2>Your Favorite Cities</h2>
+            <div class="favorites-grid" id="favorites-grid">
+                <!-- Favorite cities will be added here dynamically -->
+            </div>
+            <div class="add-favorite">
+                <input type="text" id="new-favorite" placeholder="Add a new favorite city">
+                <button id="add-favorite-btn">Add to Favorites</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Created with <i class="fas fa-heart"></i> using OpenWeatherMap API</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <script src="favorites.js"></script>
+</body>
+</html> 
